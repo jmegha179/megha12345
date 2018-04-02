@@ -1,0 +1,60 @@
+#log {
+    height: 650px;
+    width: 600px;
+    position: fixed;
+    background-color: #F5F5F5;
+    top: 30%;
+    left: 45%;
+    margin-top: -100px;
+    margin-left: -200px;
+    opacity: 0.8;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+#up {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 50px;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/originals/5b/a3/ff/5ba3ff952aa272f34a4e112d0b118e20.jpg);
+}
+
+.input-icon {
+    position: absolute;
+    left: 3px;
+    top: calc(50% - 0.5em);
+}
+
+input {
+    padding-left: 17px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.btn {
+    margin-left: 120px;
+    background-color: darkgray;
+    color: black;
+    height: 30px
+}
+
+.btn2 {
+    background-color: darkgray;
+    color: black;
+    height: 30px
+}
+
+.size {
+    height: 25px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}

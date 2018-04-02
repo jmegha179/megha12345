@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="../Controller/listController.js"></script>
+  <link rel="stylesheet" href="..\css\list.css">
+  <title>Dashboard</title>
+</head>
+
+<body ng-app="musicList" ng-controller="musicCtrl">
+  
+    <div class="page-header">
+        <center>
+            <label style="font-size:60px;color:white">Music Liberary</label>
+        </center></div>
+  <div class="container" style="background-color:#F7F7F2">
+
+
+    <div class="row">
+      <div class="col-md-2">
+        <label style="margin-top:20px;font-size:30px">Music list</label>
+      </div>
+      <div class="col-md-4">
+        <input type="text" style="margin-left:200px;margin-top:30px" class="form-control hb1" ng-model="list" placeholder="Search">
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <a href='register.html' style="text-decoration:none">
+          <label style="margin-left:80px;margin-top:35px">Add New Music</label>
+        </a>
+      </div>
+      <div class="col-md-2">
+        <a href="http://localhost:3000/#!/Login" style="text-decoration:none">
+          <label style="margin-top:35px">Logout</label>
+        </a>
+      </div>
+    </div>
+    <hr>
+
+    <table class="table table-striped" style="opacity: 0.8">
+      <thead>
+        <tr style="background-color:grey">
+          <th>Track NO.</th>
+          <th>Title</th>
+          <th>Album</th>
+          <th>Artist</th>
+          <th>Gender</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="x in names | filter:list ">
+          <td>{{ x.TrackNo }}</td>
+          <td>{{ x.Title }}</td>
+          <td>{{ x.Album }}</td>
+          <td>{{ x.Artist }}</td>
+          <td>{{ x.YearOfRelease }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</body>
+
+</html>

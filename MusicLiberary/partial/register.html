@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+  <link href="../node_modules\font-awesome\css\font-awesome.min.css" rel="stylesheet" />
+  <link href="../css/register.css" rel="stylesheet" />
+
+  <title>
+    Dashboard
+  </title>
+</head>
+
+<body>
+  <div class="page-header">
+    <center>
+      <label style="font-size:60px;color:white">Music Liberary</label>
+    </center>></div>
+  <div id="log">
+    <br>
+    <form name="myform" id="up">
+      <h1 style="margin-left:60px">
+        <img src="..\images\addjpg.jpg" width="60" height="50" alt="Natural" />Add New Song</h1>
+      <hr>
+      <h3 style="margin-left:80px">Email :
+        <div class="input-wrapper">
+          <input type="email" id="stuff" style="border-radius:5px ; border: 1px black solid" name="email" ng-model="email" ng-model="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="size" placeholder="Defalt@gmail.com" size = 35 required>
+          <label for="stuff" class="fa fa-envelope input-icon"></label>
+        </div>
+      </h3>
+      <h3 style="margin-left:80px">Password:
+        <div class="input-wrapper">
+          <input type="password" name="password" style="border-radius:5px ; border: 1px black solid" ng-model="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            class="size" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            placeholder="password *****" size = 35 required>
+          <label for="stuff" class="  fa fa-key fa-fw  input-icon"></label>
+        </div>
+      </h3>
+      <h3 style="margin-left:80px">Name:
+        <div class="input-wrapper">
+          <input type="text" name="firstname" style="border-radius:5px ; border: 1px black solid" ng-model="firstname" class="size"
+            placeholder="Enter first name"  size = 35 required>
+          <label for="stuff" class="  fa fa-user  input-icon"></label>
+        </div>
+      </h3>
+      <h3 style="margin-left:80px">Song Name:
+        <div class="input-wrapper">
+          <input type="text" name="songname" ng-model="songname" class="size" style="border-radius:5px ; border: 1px black solid" placeholder="Enter Song name"
+          size = 35 required>
+          <label for="stuff" class="  fa fa-music  input-icon"></label>
+        </div>
+      </h3>
+      <h3 style="margin-left:80px">Artist Name:
+        <div class="input-wrapper">
+          <input type="text" name="artistname" ng-model="artistname" style="border-radius:5px ; border: 1px black solid" class="size"
+            placeholder="Enter Artist name"  size = 35 required>
+          <label for="stuff" class="  fa fa-user-circle  input-icon"></label>
+        </div>
+      </h3>
+      <h3 style="margin-left:80px">Album Name:
+        <div class="input-wrapper">
+          <input type="text" name="albumname" ng-model="albumname" style="border-radius:5px ; border: 1px black solid" class="size"
+            placeholder="Enter Album name"  size = 35 required>
+          <label for="stuff" class="  fa fa-image  input-icon"></label>
+        </div>
+      </h3>
+      <br>
+      <button style="margin-left:150px;border-radius:5px ; border: 1px black solid" type="submit" class="btn" style="border-radius:5px ; border: 1px black solid"
+        value="submit">Submit</button>
+      <button type="reset" style="border-radius:5px ; border: 1px black solid" class="btn2" value="cancle">Cancle</button>
+    </form>
+  </div>
+</body>
+
+</html>

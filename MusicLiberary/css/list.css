@@ -1,0 +1,20 @@
+.container {
+	background-color: #F7F7F2;
+}
+
+.hb1 {
+	margin-top: 15px;
+	margin-left: 130px;
+	width: 200px;
+}
+
+.im1 {
+	height: 25px;
+	width: 25px;
+	margin-top: 15px;
+}
+
+body {
+	
+	background-image: url("https://i.pinimg.com/originals/5b/a3/ff/5ba3ff952aa272f34a4e112d0b118e20.jpg");
+}

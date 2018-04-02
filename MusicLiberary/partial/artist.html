@@ -1,0 +1,22 @@
+<head>
+  <link rel="stylesheet" href="..\css\artist.css">
+</head>
+
+
+<body ng-controller="artistCtrl">
+
+  <div id="log">
+    <br>
+    <form id="up">
+      <h1>
+        <img src="images\artist.jpeg" width="60" height="60" alt="Natural" /> Artist </h1>
+      <hr>
+      <marquee behavior="scroll" direction="up" scrollamount="2">
+        <ul>
+          <li ng-repeat="x in item">
+            <h4>{{x.Artist}}</h4>
+          </li>
+        </ul>
+      </marquee>
+    </form>
+</body>

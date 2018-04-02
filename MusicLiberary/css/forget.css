@@ -1,0 +1,36 @@
+#log {
+    height: 400px;
+    width: 500px;
+    border: 2px solid black;
+    margin-right: 700px;
+    border-radius: 20px;
+    margin-left: 700px;
+    margin-top: 120px;
+    background-color: #F5F5F5;
+    opacity: 0.8;
+}
+
+#up {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 50px;
+}
+
+#button {
+    color: white;
+    height: 40px;
+    margin-left:60px;
+
+    margin-top:40px;
+    border-radius: 10px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/originals/5b/a3/ff/5ba3ff952aa272f34a4e112d0b118e20.jpg);
+}

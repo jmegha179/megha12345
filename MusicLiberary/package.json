@@ -1,0 +1,28 @@
+{
+  "name": "Dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "Megha",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-ui-router": "^1.0.3",
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "lite-server": "^2.3.0",
+    "nodemon": "^1.15.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.6.9",
+    "karma": "^2.0.0",
+    "jasmine-core": "^3.1.0",
+    "karma-chrome-launcher": "^2.2.0"
+  }
+}

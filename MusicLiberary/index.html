@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/app.css">
+    <script type="text/javascript" src="node_modules\angular-ui-router\release\angular-ui-router.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="Js\routerConfig.js"></script>
+    <script type="text/javascript" src="Controller\artistController.js"></script>
+    <script type="text/javascript" src="Factory\artistFactory.js"></script>
+    <script type="text/javascript" src="Controller\listController.js"></script>
+    <script type="text/javascript" src="Controller\loginController.js"></script>
+    <title>
+        Dashboard
+    </title>
+</head>
+
+<body ng-app="myApp">
+
+    <div class="container myclass ">
+        <div class="row">
+            <div class="col-md-2">
+                <h1 id="ang">
+                    <strong>Music Library</strong>
+                </h1>
+                <hr>
+            </div>
+            <div class="col-md-10">
+                <div class="row link">
+                    <h2>
+                        <a ui-sref="Home" class="abc">Home</a>
+                    </h2>
+                    <h2>
+                        <a ui-sref="Artist" class="abc">Artist</a>
+                    </h2>
+                    <h2>
+                        <a ui-sref="Gallary" class="abc">Gallary</a>
+                    </h2>
+                    <h2>
+                        <a ui-sref="Login" class="abc">Login</a>
+                    </h2>
+                    <div ui-view=""></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
